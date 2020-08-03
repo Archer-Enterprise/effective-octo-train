@@ -39,13 +39,13 @@ metadata:
   namespace: monitoring
   annotations:
       prometheus.io/scrape: 'true'
-      prometheus.io/port:   '9090'
+      prometheus.io/port:   '30300'
 
 spec:
   selector:
     app: prometheus-server
   type: NodePort
   ports:
-    - port: 8080
-      targetPort: 9090
-      nodePort: 30000
+    - port: 30300
+      targetPort: 30300
+      nodePort: 30300
